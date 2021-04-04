@@ -13,6 +13,7 @@ The ET code takes a number of images and an input file holding the path to all i
 * The project uses smart pointers instead of raw pointers(lines 86-87).
 * A mutex or lock is used in the project(lines 87).
 * The project uses multithreading(lines 85-133).
+* The project accepts user input and processes the input (lines 22-28).
 
 2. `Parser.h` Contains two classes. Polymorphisim is elaborated here. This file shows the comprehension of OOP.
 * Class constructors utilize member initialization lists(lines 64-68).
@@ -24,6 +25,7 @@ The ET code takes a number of images and an input file holding the path to all i
 * The project uses destructors appropriately(lines 41).
 * The project makes use of references in function declarations(lines 42-44).
 * Templates generalize functions in the project (lines 27-36).
+* The project reads data from a file and process the data, or the program writes data to a file(lines 30-62).
 
 5. `ImageProcessing.cpp` Contains all methods of the templated class 'QueueManager' and the methods of ImageProcessing. The method 'ImageProcessing::Process' is the one that 
 * The project uses move semantics to move data, instead of copying it, where possible(lines 34).
