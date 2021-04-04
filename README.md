@@ -10,26 +10,26 @@ The ET code takes a number of images and an input file holding the path to all i
 
 ## Project structure
 1. `EdgeTracking.cpp` Contains the main function which parsers the input parameters and the input file. Then, the program can run with or without concurrency. The submitted version runs with concurrency (lines 82-135) 
-*The project uses smart pointers instead of raw pointers(lines 86-87).
-*A mutex or lock is used in the project(lines 87).
-*The project uses multithreading(lines 85-133).
+* The project uses smart pointers instead of raw pointers(lines 86-87).
+* A mutex or lock is used in the project(lines 87).
+* The project uses multithreading(lines 85-133).
 
 2. `Parser.h` Contains two classes. Polymorphisim is elaborated here. This file shows the comprehension of OOP.
-*Class constructors utilize member initialization lists(lines 64-68).
-*Classes follow an appropriate inheritance hierarchy(lines 36-37).
+* Class constructors utilize member initialization lists(lines 64-68).
+* Classes follow an appropriate inheritance hierarchy(lines 36-37).
 
 3. `Parser.cpp` Contains the methods of two classes that read data from input file and write data to the output file.
 
 4. `ImageProcessing.h` Classes implemented here analyze the object image. Smart pointers are used here and the rule of 5 is implemented on lines 46-51. Mutexes and locks are implemented in the cpp to protect the screen while printing. Condition variable is used in Queue Manager templated class at lines 27-35 
-*The project uses destructors appropriately(lines 41).
-*The project makes use of references in function declarations(lines 42-44).
-*Templates generalize functions in the project (lines 27-36).
+* The project uses destructors appropriately(lines 41).
+* The project makes use of references in function declarations(lines 42-44).
+* Templates generalize functions in the project (lines 27-36).
 
 5. `ImageProcessing.cpp` Contains all methods of the templated class 'QueueManager' and the methods of ImageProcessing. The method 'ImageProcessing::Process' is the one that 
-*The project uses move semantics to move data, instead of copying it, where possible(lines 34).
-*The project follows the Rule of 5(lines 39-146).
-*Classes use appropriate access specifiers for class members(lines 53-56).
-*A condition variable is used in the project(lines 18-37).
+* The project uses move semantics to move data, instead of copying it, where possible(lines 34).
+* The project follows the Rule of 5(lines 39-146).
+* Classes use appropriate access specifiers for class members(lines 53-56).
+* A condition variable is used in the project(lines 18-37).
 
 ## Where to find the code
 
