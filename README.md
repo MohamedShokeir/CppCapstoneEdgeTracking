@@ -9,9 +9,11 @@ EdgeTracking (ET) is an image analysis program that detects and analyzes the con
 The ET code takes a number of images and an input file holding the path to all images and some information about each image. Each image is than processed to detect the contours of the given sample. The contours are then analyzed to extract the needed information. The output is by default a csv file that contains all data. If Save is set to true, all analyzed images will be given as output as well.
 
 ## Project structure
-1. `EdgeTracking.cpp` Contains the main function when parsers the input parameters and the input file. Then, the program can run with or without concurrency. The submitted version runs with concurrency (lines 82-135)
+1. `EdgeTracking.cpp` Contains the main function which parsers the input parameters and the input file. Then, the program can run with or without concurrency. The submitted version runs with concurrency (lines 82-135)
 2. `Parser.h` Contains two classes. Polymorphisim is elaborated here. This file shows the comprehension of OOP.
+3. `Parser.cpp` Contains the methods of two classes that read data from input file and write data to the output file.
 3. `ImageProcessing.h` Classes implemented here analyze the object image. Smart pointers are used here and the rule of 5 is implemented on lines 46-51. Mutexes and locks are implemented in the cpp to protect the screen while printing. Condition variable is used in Queue Manager templated class at lines 27-35 
+4. `ImageProcessing.cpp` Contains all methods of the templated class 'QueueManager' and the methods of ImageProcessing. The method 'ImageProcessing::Process' is the one that 
 
 ## Where to find the code
 
