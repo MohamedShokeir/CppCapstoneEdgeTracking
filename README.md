@@ -71,9 +71,15 @@ This project uses [Make](https://www.gnu.org/software/make/). The Makefile has f
 
 ### Running
 ```bash
-cd workingDir/
-../build/ET file.txt
+cd test/ 
+../build/ET J47_NT10_E258.txt
 ```
+OR
+```bash
+cd test1/ 
+../build/ET J47_NT10_E258.txt
+```
+
 Please refer to `./CppEdgeTracking/test` to see an example of `file.txt`
 
 ## Contributing
